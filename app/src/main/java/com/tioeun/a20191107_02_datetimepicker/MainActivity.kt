@@ -28,7 +28,7 @@ class MainActivity : BaseActivity() {
                 selectedTime.set(Calendar.MINUTE, minute)
 
                 var sdf = SimpleDateFormat("a h:m")
-                timeTxt.text = sdf.format(selectedTime)
+                timeTxt.text = sdf.format(selectedTime.time)
 
             }, 10, 20, false)
             timePickerDialog.show()
